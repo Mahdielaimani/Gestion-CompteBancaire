@@ -1,3 +1,4 @@
+
 def sign_up():
     print("Create Account")
     name = input("Enter your name: ")
@@ -12,4 +13,4 @@ def sign_up():
             print("Account created")
             print("Name:", name)
             print("Email:", email)
-            break  
+            break

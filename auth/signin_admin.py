@@ -1,5 +1,17 @@
+import pandas as pd
+
 def sign_in_admin():
+    file_path = r'C:\Users\Mahdi Elaimani\Desktop\Projet Python & Scrum\db.xlsx'
+    data = pd.read_excel(file_path)
+
+    data.columns = data.columns.str.strip()
+
     print("Hello Administrator:")
     email = input("Enter your email: ")
     password = input("Enter your password: ")
-    print("You have successfully signed in as an administrator.")
+
+    if not data[(data['Admin_Email'] == email) & (data['Admin_Password'] == password)].empty:
+        print("You have successfully signed in as an administrator.")
+    else:
+        print("Invalid email or password. Please try again.")
+
