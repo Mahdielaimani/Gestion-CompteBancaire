@@ -1,5 +1,6 @@
 import pandas as pd
 import auth.signup
+import view.dashboard_client
 def sign_in_client():
     file_path = r'C:\Users\Mahdi Elaimani\Desktop\Projet Python & Scrum\db.xlsx'
     data = pd.read_excel(file_path)
@@ -12,6 +13,7 @@ def sign_in_client():
         password = input("Enter your password: ")
         if not data[(data['USER_Email'] == email) & (data['USER_Password'] == password)].empty:
             print("You have successfully signed in.")
+            view.dashboard_client.dashboard_client()
         else:
             print("Invalid email or password. Please try again.")
 

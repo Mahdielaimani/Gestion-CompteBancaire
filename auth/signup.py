@@ -1,4 +1,4 @@
-
+import view.dashboard_client
 def sign_up():
     print("Create Account")
     name = input("Enter your name: ")
@@ -13,4 +13,6 @@ def sign_up():
             print("Account created")
             print("Name:", name)
             print("Email:", email)
+            view.dashboard_client.dashboard_client()
+
             break
