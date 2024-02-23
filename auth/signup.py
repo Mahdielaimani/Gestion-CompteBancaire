@@ -1,5 +1,5 @@
 import pandas as pd
-
+import view.dashboard_client
 def sign_up():
     file_path = 'C:\\Users\\Mahdi Elaimani\\Desktop\\Projet Python & Scrum\\db.xlsx'
     data = pd.read_excel(file_path)
@@ -20,10 +20,8 @@ def sign_up():
             print("Account created")
             print("Name:", name)
             print("Email:", email)
-            # import view.dashboard_client
 
-            # view.dashboard_client.dashboard_client()
+            view.dashboard_client.dashboard_client()
             break
 
-sign_up()
 
