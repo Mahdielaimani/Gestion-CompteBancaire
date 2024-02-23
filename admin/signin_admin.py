@@ -1,8 +1,6 @@
 
 import pandas as pd
 
-
-
 def sign_in_admin():
     file_path = r'C:\Users\Mahdi Elaimani\Desktop\Projet Python & Scrum\db.xlsx'
     data = pd.read_excel(file_path)
