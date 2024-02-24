@@ -54,7 +54,6 @@ def show_clients_data():
     file_path = r'C:\Users\Mahdi Elaimani\Desktop\Projet Python & Scrum\db.xlsx'
     data = pd.read_excel(file_path)
     
-    # Check if there are any clients
     if not data.empty:
         print("All Clients:")
         print(data)

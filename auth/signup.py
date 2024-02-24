@@ -14,14 +14,14 @@ def sign_up():
             print("The passwords do not match. Please try again.")
         else:
             new_index = len(data) + 2
-            new_row = {'USER_ID': '', 'USER_NAME': name, 'USER_Email': email, 'AMOUNT':0.0,'NB_TRANS': 0,}
+            new_row = {'USER_ID': '', 'USER_NAME': name, 'USER_EMAIL': email, 'AMOUNT':0.0,'NB_TRANS': 0,}
             data.loc[new_index] = new_row
             data.to_excel(file_path, index=False)
             print("Account created")
             print("Name:", name)
             print("Email:", email)
 
-            view.dashboard_client.dashboard_client()
+            view.dashboard_client.dashboard_client(email)
             break
 
 

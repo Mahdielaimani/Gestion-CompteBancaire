@@ -11,9 +11,9 @@ def sign_in_client():
     if yes_or_no == 'yes':
         email = input("Enter your email: ")
         password = input("Enter your password: ")
-        if not data[(data['USER_Email'] == email) & (data['USER_Password'] == password)].empty:
+        if not data[(data['USER_EMAIL'] == email) & (data['USER_Password'] == password)].empty:
             print("You have successfully signed in.")
-            view.dashboard_client.dashboard_client()
+            view.dashboard_client.dashboard_client(email)
         else:
             print("Invalid email or password. Please try again.")
 
