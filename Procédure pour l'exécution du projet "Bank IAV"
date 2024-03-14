@@ -1,9 +1,15 @@
 1.Téléchargez le code que nous avons envoyé sur Classroom.
+
 2.Avant de l'ouvrir dans Visual Studio Code, assurez-vous d'avoir un fichier 
 nommé "db.xlsx" placé dans un dossier sur votre machine.
+
 3.Copiez le chemin du fichier "db.xlsx" sur votre machine.
-4.Utilisez ce chemin pour remplacer tous les emplacements où il est mentionné dans le code, en suivant les indications fournies dans la capture d'écran que nous avons incluse. 
+
+4.Utilisez votre chemin pour remplacer tous les emplacements mentionnés dans le code en utilisant la fonction "Rechercher et Remplacer" dans Visual Studio Code
+
 5.Assurez-vous d'avoir installé les bibliothèques Python "pandas" et "openpyxl" en exécutant la commande "pip install" dans votre terminal.
+
 6.Ensuite, exécutez le code principal(main).
+
 7.Si vous avez besoin des identifiants (email et mot de passe) pour les comptes administrateurs ou clients, vous les trouverez dans le fichier "db.xlsx".
 Je vous remercie de votre attention et je reste à votre disposition pour toute clarification supplémentaire.
